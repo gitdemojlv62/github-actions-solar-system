@@ -78,11 +78,9 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
       - name: Setup kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: v.1.26.0
+        uses: azure/setup-kubectl@v4
       - name: Set k8s context
-        uses: azure/k8s-set-context@v3
+        uses: azure/k8s-set-context@v4
         with:
           method: kubeconfig
           kubeconfig: ${{ secrets.KUBECONFIG }}
