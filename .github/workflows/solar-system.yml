@@ -86,4 +86,4 @@ jobs:
           kubeconfig: ${{ secrets.KUBECONFIG }}
       - name: kubectl - get k8s cluster version
         run: |
-          kubectl version --short -o yaml
+          kubectl version
